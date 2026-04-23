@@ -1,15 +1,26 @@
+## Alunos:
+- Marco Antonio Reche Rigon
+- Maria Eduarda Campos
+- Matheus Roberto da Silva Correa
+
 ## Compilar
+Antes de compilar, volte para a pasta raiz do projeto (```cd ..```) e então execute
 ```
-javac Porto.java ClientePorto.java
+javac porto/*.java
 ```
+Não esqueça de verificar se está usando Java 8
 
 ## Executar
-1. Execute o servidor
+1. Inicie o servidor RMI
     ```
-    java Porto
+    java porto.Porto
     ```
 
-2. Execute o cliente
+2. Inicie o servidor SOAP
     ```
-    java ClientePorto
+    java porto.WSPortoPublisher
+    ```
+3. Inicie o cliente por WS
+    ```
+    java porto.WSPortoCliente
     ```

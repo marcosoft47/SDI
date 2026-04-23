@@ -1,5 +1,5 @@
-import java.rmi.Naming;
-import java.rmi.RemoteException;
+package porto;
+
 import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
 import java.util.Scanner;

@@ -1,3 +1,5 @@
+package porto;
+
 import java.rmi.RemoteException;
 import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
@@ -86,7 +88,7 @@ public class Porto extends UnicastRemoteObject implements IPorto {
 
     // Classe interna para representar um navio
     private class Navio {
-        private static int contadorNavios = 0;
+        private int contadorNavios = 0;
         private Integer id;
         private String descricao;
         private Integer capacidade;
@@ -112,7 +114,7 @@ public class Porto extends UnicastRemoteObject implements IPorto {
 
     // Classe interna para representar uma carga
     private class Carga {
-        private static int contadorCargas = 0;
+        private int contadorCargas = 0;
         private Integer id;
         private String descricao;
         private Integer volume;
