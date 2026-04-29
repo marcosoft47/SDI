@@ -11,6 +11,7 @@ public class Porto extends UnicastRemoteObject implements IPorto {
     private ArrayList<Carga> cargas;
     private ArrayList<Navio> navios;
     private double totalEmbarcado;
+    private int contadorCargas = 0;
 
     public Porto() throws RemoteException {
         super();
@@ -115,7 +116,6 @@ public class Porto extends UnicastRemoteObject implements IPorto {
 
     // Classe interna para representar uma carga
     private class Carga {
-        private int contadorCargas = 0;
         private Integer id;
         private String descricao;
         private Integer volume;
