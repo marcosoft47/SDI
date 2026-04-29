@@ -21,15 +21,16 @@ public class Porto extends UnicastRemoteObject implements IPorto {
 
     @Override
     public double embarcar(String descricao) throws RemoteException {
-        double cargaEmbarcada = Math.random() * 1000;
+        double cargaEmbarcada = Math.round(Math.random() * 1000); // só posso receber descrição da carga, sortear quanto embarcou
         totalEmbarcado += cargaEmbarcada;
+        cadastrar_carga(descricao, (int) cargaEmbarcada);
         System.out.println("Embarque realizado: " + descricao + " - Carga: " + cargaEmbarcada);
         return cargaEmbarcada;
     }
 
     @Override
     public String relatorio_embarque() throws RemoteException {
-        return "Total embarcado até agora: " + totalEmbarcado + " unidades.";
+        return "Total embarcado até agora: " + totalEmbarcado + " unidades.\n" + relatorio_carga();
     }
 
     @Override
