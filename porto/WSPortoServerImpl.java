@@ -9,7 +9,7 @@ public class WSPortoServerImpl implements WSPortoServer {
  
     private IPorto getPortoRMI() throws Exception {
         // Conecta ao registro RMI para obter a instância do serviço existente
-        Registry registry = LocateRegistry.getRegistry("localhost", 1099);
+        Registry registry = LocateRegistry.getRegistry("localhost", 5001);
         return (IPorto) registry.lookup("PortoService");
     }
 

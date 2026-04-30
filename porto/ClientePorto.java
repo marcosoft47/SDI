@@ -8,7 +8,7 @@ public class ClientePorto {
     public static void main(String[] args) {
         try {
             // Conecta ao servidor RMI
-            Registry registry = LocateRegistry.getRegistry("localhost", 1099); // 1099 é a porta padrão
+            Registry registry = LocateRegistry.getRegistry("localhost", 8085); // 8085 é a porta padrão
             IPorto porto = (IPorto) registry.lookup("PortoService");
 
             Scanner scanner = new Scanner(System.in);

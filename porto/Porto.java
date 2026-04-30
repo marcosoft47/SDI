@@ -142,8 +142,8 @@ public class Porto extends UnicastRemoteObject implements IPorto {
     // Método main que inicializa o servidor RMI
     public static void main(String[] args) {
         try {
-            // Cria o registro RMI na porta 1099
-            Registry registry = LocateRegistry.createRegistry(1099);
+            // Cria o registro RMI na porta 8085
+            Registry registry = LocateRegistry.createRegistry(8085);
             // Cria o objeto do servidor
             Porto porto = new Porto();
             // Registra o serviço no registro RMI com o nome "PortoService"

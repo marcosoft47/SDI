@@ -9,7 +9,7 @@ public class WSPortoClient {
     public static void main(String[] args) {
         try {
             // Configuração da conexão com o Web Service
-            URL url = new URL("http://localhost:8085/ws/porto?wsdl");
+            URL url = new URL("http://localhost:5001/WSPorto?wsdl");
             QName qname = new QName("http://porto/", "WSPortoServerImplService");
             
             Service service = Service.create(url, qname);
