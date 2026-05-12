@@ -1,0 +1,13 @@
+Alunos:
+Marco Antonio Reche Rigon
+Maria Eduarda Campos
+Matheus Roberto da Silva Correa
+
+Primeiro você deve executar o MulticastSender.py. Para isso, execute o seguinte comando no seu terminal.
+´´´
+    python3 MulticastSender.py
+´´´
+Em seguida, execute o MulticastReceiver.py. Execute o seguinte comando no seu terminal.
+´´´
+    python3 MulticastReceiver.py
+´´´
